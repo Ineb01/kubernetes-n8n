@@ -3,8 +3,9 @@ kind: Ingress
 metadata:
   name: n8n-ingress
   namespace: n8n
+  annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
-  ingressClassName: nginx
   rules:
     - host: n8n.cluster.dphx.eu
       http:
