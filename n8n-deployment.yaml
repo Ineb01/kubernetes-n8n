@@ -51,6 +51,10 @@ spec:
                   key: POSTGRES_NON_ROOT_PASSWORD
             - name: N8N_PROTOCOL
               value: http
+            - name: N8N_PROXY_HOPS
+              value: 1
+            - name: WEBHOOK_URL
+              value: https://n8n.cluster.dphx.eu/
             - name: N8N_PORT
               value: "5678"
           image: n8nio/n8n
